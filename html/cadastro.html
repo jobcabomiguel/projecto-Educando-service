@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <style>
+        header{
+            margin-top:-12px;
+        }
+        article{
+            margin-top:-15px;
+            background: rgb(187, 188, 247);
+            
+        }
+       article > div{
+           border-radius: 20px;
+           margin-top:20px;
+           padding: 10px;
+           box-shadow: 4px 4px 16px black;
+           background: rgb(187, 188, 247);
+       }
+            div#campos{
+                width:40%;
+                float: left;
+                margin-left:8%;
+                position: relative;
+                background-color: rgba(250, 250, 250, 0.808);
+                }
+            div#informacao{
+                width:40%;
+                padding: 10px;
+                float: right;
+                margin-right:8%;
+                position: relative;
+                background-color: rgba(250, 250, 250, 0.808);
+                
+            }
+            a{
+                color:black;
+            }
+            
+            div#informacao p{
+                font-size:18pt;
+                margin:8;
+                color:rgb(28, 9, 170);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            div#informacao h1 {
+                font-size:25pt;
+                text-align: center;
+                color:rgb(5, 0, 0);
+                margin:0;
+                margin-bottom: 50px;
+                font-family: arial;
+                
+            }
+            h2{
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 25pt;
+                color:blue;
+            }
+            fieldset{
+                border:none;
+                margin:0;
+            }
+            fieldset > p {
+                margin:0;
+                font-family: Calibri;
+                font-size:22pt;
+                margin-top:4px;
+                font-weight:600;
+                color: #2b2b2b;
+            }
+            input{
+                width:80%;
+                height: 50px;
+                border-radius: 20px;
+                border:none;
+                font-size: 18pt;
+                text-indent: 20px;
+                margin-left: 10px;
+                background: rgba(0, 0, 255, 0.767);
+                color:white
+            }
+            input::placeholder{
+                color:white;
+            }
+            .botao{
+                width:100%;
+                font-size: 20pt;
+                margin-top:30px;
+                border-radius: 20px;
+                border: none;
+                padding: 10px;
+                font-family: tahoma;
+                background:blue;
+                color: white;
+            }
+            .botao:hover{
+                cursor: pointer;
+                background:rgb(3, 3, 61);
+            }
+
+    </style>
+        <link rel="stylesheet" href="../estilos/home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastramento</title>
+</head>
+<body style="background: rgb(187, 188, 247);">
+    <section class="cadastro-centro">
+        <header>
+                <div id="cabecalho">
+                        <nav class="navegacao">
+                                <ol class="index">
+                                            <li><a href="../index.html">Home</a></li>
+                                            <li><a href="cursos.html">Cursos</a></li>
+                                            <li><a href="login.html">Login</a></li>
+                                            <li><a href="cadastro.html">Cadastra-se</a></li>
+                                            <li><a href="sobre.html">Sobre</a></li>
+                                            <li><a href="ajuda.html">Ajuda!</a></li>
+                                        
+                                </ol>
+                                <div id="imagens">
+                                        <figure>
+                                            <img style="width:100%; height:90px;" src="../imagens/menu.png" alt="Imagem da respectiva página">
+                                        </figure>
+                                </div>
+                    </nav>
+             </div>
+        </header>
+        <article>
+            <div id="informacao">
+    <h1> Cadastramento de usuário</h1>
+            <p> Prencha todos os espaços se tiver alguma dúvida vai para a zona de 
+            <a href="ajuda.html"> ajuda </a> lá tem um video completo a ensinar como podes final todos estes procedimento até a confirmacão do cadastramento.</p>
+            <p> Se estiver interessado a ter aulas presencias em nosso plataforma de ensino vai para a zona de ajuda, tem um formulário, prencha-o para seres cadastrado como um estudando de nível superior. </p>
+
+            </div>
+            <div id="campos">
+                <form action="recebercadastro.html" method="GET">
+                    <fieldset>
+                        <legend> <h2> Cadastramento </h2></legend>
+                        <p> <label for="nome_usuario">Nome</label></p> 
+                            <p><input type="text" name="nome_usuario" id="nome_usuario" placeholder="Digite o seu nome "></p>
+                        <p> <label for="sobrenome_usuario">Sobrenome</label></p> 
+                            <p><input type="text" name="sobrenome_usuario" id="sobrenome_usuario" placeholder="Digite o seu sobrenome"></label></p>
+                        <p> <label for="email_usuario">Email </label></p>
+                                <p><input type="email" name="email_usuario" id="email_usuario" placeholder="Digite o seu email"></p>
+                        <p><label for="senha_usuario">Senha</label></p>
+                            <p> <input type="password" name="senha_usuario" id="senha_usuario" placeholder="Digite a sua senha "></p>
+                        <p><label for="confirmar_usuario">Confirmar senha</label></p> 
+                            <p> <input type="password" name="confirmar_usuario" id="confirmar_usuario" placeholder="Confirme a sua senha"></p>
+
+                        <button class="botao"> Registra Cadastra</button>
+                    </fieldset>
+
+                </form>
+
+            </div>
+        </article>
+    </section>
+</body>
+</html>

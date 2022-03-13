@@ -1,0 +1,298 @@
+/* ZOna de navegacao com o funco azul escuro e os li brancos */
+* { 
+    -webkit-box-sizing: border-box;  
+    -moz-box-sizing: border-box;   
+    box-sizing: border-box;
+} 
+.zona-principal{
+    margin-right:0;
+    margin-top:0;
+}
+.row{
+    padding: 0;
+    margin-right:0;
+    margin-top:0;
+}
+footer{
+    margin-right:0;
+    margin-top:0;
+
+}
+.fundo-branco{
+    background: white;
+}
+*:before, *:after { 
+    -webkit-box-sizing: border-box;  
+    -moz-box-sizing: border-box;   
+    box-sizing: border-box; 
+}
+/*FORMATACAO DO BOTAO MOSTRAR LINKS */ 
+.mostrar{
+    border-top: 4px solid blue;
+    width:25px;
+    display: block;
+    margin:4px;
+  }
+  #mostrar{
+    margin-top:-10px;
+    list-style: none;
+    background-color:white;
+    padding: 5px;
+    padding-right:4px; 
+    width:42px;
+}
+#mostrar:hover{
+  cursor: pointer;
+  background-color:white;
+}
+
+.banner_azul_escuro{
+    background-color: #003AFA;
+}
+.banner_azul_escuro li{
+    padding-right:8px;
+    padding-left:8px;
+    padding-top:10px;
+    padding-bottom: 10px;  
+    border-radius: 5px;
+    transition: 2s;
+}
+
+.banner_azul_escuro a:not(ol li a ){
+    color: white;
+}
+.banner_azul_escuro a:hover{
+    text-decoration: none;
+}
+.banner_azul_escuro li:hover:not(ol li){
+    background-color: #224763;
+}
+/* No zona de zona e cor do roda pe*/
+.cabecario-black{
+    background:#25397A;
+}
+
+
+/* Espacamento-vertical de 5 pexis*/
+.padding-vertical5{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+/* espacamento do footer*/
+.padding-lateral{
+        padding-right:40px;
+        padding-left:40px;
+        color:white;
+    }
+/* configuracoes da home */
+p{
+    color: black;
+}
+/* Formatação de texto da pagina cursos no seu banner com paragrafos e links e outros aspectos */
+.secao-cursos p {
+    font-size:13pt;
+    color:white;
+    font-weight: 400;
+}
+.secao-cursos a:hover{
+    text-decoration: none;
+}
+.imagens{
+    background: url("imagens/centro5.jpg") no-repeat;
+    background-size:90%;
+    background-position:top;
+
+}
+.container{
+    padding-left: 5px;
+    padding-right: 5px;
+    background: white;
+}
+.logar{
+    position: absolute;
+}
+.logar li{
+   font-size:10pt;
+} 
+.espaco li {
+  padding: 5px;
+}
+/*Janela de login validade e atualizada via javascript*/
+#janela{
+    width:360px;
+    right:20em;
+    height:375px;
+    display: none;
+    border-radius:20px;
+} 
+/*Titulo do web site*/
+.navbar-header h3{
+    color: yellow;
+    font-family: jokeman;
+    font-weight: 100;
+  }
+  .navbar-header sub{
+    color: yellow;
+  }
+.show{
+    width: 10px;
+    height: 4px;
+    background-color: white;
+    display: block;
+    content: '';
+}
+ @media(max-width: 556px){
+    ul#menu_home{
+        margin-top: 10px;
+    }
+    #inovação{
+        height: 40em;
+    }
+
+    .banner_azul_escuro li{
+    padding: 5px;
+    transition: 2s;
+}
+
+.banner_azul_escuro a:not(ol li a ){
+    color: white;
+}
+.banner_azul_escuro a:hover{
+    text-decoration: none;
+    background-color: none;
+}
+.banner_azul_escuro li:hover{
+    background-color:none;
+}
+}
+/* Formatacao da pagina principal do site */
+#fundo{
+    background-image: url(imagens/centro1.jpg);
+    background-size: cover;
+   }
+   article#texto-artigo{
+   }
+   article#texto-artigo h1{
+    text-align: center;
+    font-size: 3em;
+    font-family: arial;
+    color: white;
+   }
+   article#texto-artigo p {
+    font-size: 1.4em;
+    font-family: arial;
+    text-align: center;
+    text-indent: 20px;
+    color: white;
+   }
+       #show{
+        display: none;
+        position:relative;
+        right: 20px;
+        top: 20px;
+
+       }
+    .zona-principal{}
+     #show button.navbar-toggle{
+          display: block;
+          width: 26px;
+          margin-top: 3px;
+          margin-bottom: 3px;
+          padding: 2px;
+          height: 5px;
+          border: 0;
+     }
+
+    #show button.navbar-toggle:hover{
+      background-color: none;
+      border: none;
+      cursor: pointer;
+    }
+    /*Ajustamento ou responsibiidade para mobile em nav e com codigos javascript para o li#*/
+    @media(max-width: 900px){
+      #menu_home{
+        display: none;
+        margin-top:24px;
+        left:46%;
+        /*border: 1px solid  rgba(0, 0, 0, 1.0);*/
+      }
+      #menu_home a:hover{
+          background-color: none;
+      }
+      .banner_azul_escuro{
+          padding-bottom: 4em;
+      }
+      #show{
+        display: block;
+        margin-top:-7%;
+        margin-right:-8px;
+        height: 20px;
+
+      }
+      #logo{
+        border: block;
+      }
+    }
+    @media(max-width: 556px){
+      #menu_home{
+        display: none;
+        top:30px;
+        left:50%;
+        margin-bottom: 20px;
+      }
+     #painel{
+      background-attachment: fixed;
+     }
+
+     #painel_menu{
+        width: 102.5%;
+        background-image: url(imagens/centro5.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgb(51, 51, 51);
+        color: white;
+        box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+        padding: 40px;
+        background-attachment: fixed;
+
+    }
+
+    p{
+      padding: 10px;
+      margin-left:10px;
+    }
+    h3{
+      padding: 10px;
+      margin-left:10px;
+      text-align: center;
+    }
+    #fundo{
+    background-image:none;
+    background-color: rgba(0, 0, 0, 0.6);
+   }
+   article#texto-artigo h1{
+    text-align: center;
+    font-size: 2em;
+    font-family: arial;
+    color: white;
+   }
+   article#texto-artigo p {
+    font-size: 1.3em;
+    font-family: arial;
+    text-align: center;
+    text-indent: 10px;
+    color: white;
+   }
+   /* botao com o funcao show menu_links*/
+   #show{
+        display: block;
+        margin-top:-20%;
+        margin-right:-8px;
+
+      }
+      /*logo da marca*/ 
+      #logo{
+        border: block;
+    }
+    
+  }

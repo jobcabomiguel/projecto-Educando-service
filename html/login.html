@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <style>
+        .row{
+           
+        }
+        section{
+            width:90%;
+            
+            
+        }
+        div.container{
+            background: rgba(19, 49, 180, 0.966);
+            color: white;
+        }
+        p, label{
+            color: white;   
+        }
+    </style>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../MinhasClasses.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login</title>
+<style> 
+.container{
+    border-radius: 20px;
+    padding: 10px;
+}
+section{
+    margin:0 auto;
+    border-radius: 20px;
+    padding: 10px;
+}
+.p{
+    margin-top:0.4rem;
+    margin-bottom:0.4rem;
+    margin-right:auto;
+    margin-left: auto;
+}
+
+input{
+    transition:2s;
+    margin: 0 auto;
+}
+input:hover{
+   
+}
+h3{
+    text-align: center;
+}
+#cancelar{
+    display: block;
+    float: right;
+    color:black;
+    margin-top:-1.5em;
+    font-size:100%;
+    padding-top:-1px; 
+    width:40px;
+}
+    /*ol  class="nav" class="logar" id="logar">*/
+</style>
+</head>
+
+<body>
+        <section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                    <h3> Login</h3> 
+                    <form action="login_recebido" method="post">
+                    <h3 id="cancelar" class="btn btn-light"> x </h3>
+                    <div class="form-group  p ">
+                            <label for="e"></label>
+                            <input type="email" id="gmail_usuario" placeholder="Digite a seu email" class="form-control">
+                    </div>
+                    <div class="form-group p "> 
+                        <input type="password" placeholder="Digite a sua senha" id="senha_usuario" class="form-control">
+                    </div>
+                            <p>    <input type="checkbox" id="lembrar"> <label for="lembrar"> Lembrar senha </label>  </p>
+                               <button type="submit" class="btn-block btn-primary">Logar </button>
+
+                             <p>  &copy;2021-2022 
+                           </form>
+            </div>
+        </div>
+    </div>
+</section>
+         <script src="../javascript/function-home.js"></script>
+         <script src="../js/bootstrap.js"></script>
+  </section>
+</body>
+</html>

@@ -1,0 +1,68 @@
+@charset = "utf-8";
+
+header{
+	margin-top: 0;
+	background-color: black;
+	padding: 10%;
+	color: white;
+}
+h1{
+	display: block;
+	font-size: 340%;
+	text-align: center;
+}
+section.p{
+	display: block;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+section.p p {
+	font-size: 1.3em;
+	font-family: sans-serif;
+}
+section.img{
+	background-color: rgb(51, 51, 51);
+	color: white;
+	box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+	padding: 40px;
+	
+}
+
+section.img p{
+	width: 50%;
+	font-size: 26px;
+	font-display: inline-block;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.514);
+	text-shadow: 1px 1px opx black;
+	font-family:Monotype Corsiva ;/*Lucida Calligraphy*/
+}
+section#img01{
+	background-image: url(job.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+section#img02{
+	background-image: url(imagens/centro1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-size: ;
+}
+body{
+					background-color:lightblue;
+				}
+			@media(max-width = 500px ){
+				body{
+					background-color:lightblue;
+				}
+				section#principal{
+					width:px; 
+
+				}
+			}
+
+/*<header>
+          <h1> Projecto Fundo maravilha </h1>
+
+<section class="p">
+<section class="p" id="img01">*/
